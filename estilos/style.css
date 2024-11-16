@@ -1,0 +1,348 @@
+@charset "UTF-8";
+
+:root {
+    --cor-1: #00cacade;
+    --cor2: #00ffff;
+}
+
+/*ESTILO GERAL*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+span {
+    color: aqua;
+}
+
+body {
+    background-color: #0e0e0e;
+    color: white;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/*ESTILO CABEÇALHO*/
+
+header {
+    padding: 100px 10%;
+}
+
+header > .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+header nav ul li:hover {
+    transform: scale(1.13);
+    
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header nav ul li a:hover {
+    color: var(--cor-1);
+}
+
+.btn-contato button {
+    color: white;
+    background-color: var(--cor-1);
+    padding: 15px ;
+    border-radius: 100px;
+    border: 0;
+    font-weight: 1000;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-contato button:hover {
+    transform: scale(1.13);
+    box-shadow: 0 0 20px 1px #ffffff;
+}
+
+/*ESTILO TOPO DO SITE*/
+
+section.topodo-site {
+    padding: 100px 10% ;
+}
+
+body > main > section > div > div {  /*flex*/
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.txt-topodo-site h1 {
+    color: whitesmoke;
+    font-size: 45px;
+    line-height: 40px;
+}
+
+.txt-topodo-site p {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 40px 0;
+}
+
+.img-topodo-site img {
+    box-shadow: 0 0 60px 5px var(--cor2);
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 15px
+    }
+}
+
+/*ESPECIALIDADES*/
+
+section.especialidades {
+    padding: 100px 10%;
+}
+
+section.especialidades h2 {
+    text-align: center;
+    padding-bottom: 80px;
+    color: whitesmoke;
+    font-size: 45px;
+}
+
+section.especialidades .flex {
+    gap: 100px;
+}
+
+section.especialidades .especialidades-box {
+    width: 390px;
+    height: 360px;
+    border-radius: 0 40px 40px;
+    padding: 50px;
+    transition: .7s;
+}
+
+section.especialidades .especialidades-box:hover {
+    box-shadow: 0 0 30px 0px #00ffff;
+}
+
+section.especialidades .especialidades-box i {
+    font-size: 70px;
+    color: var(--cor-1);
+}
+
+section.especialidades .especialidades-box h1 {
+    padding: 5px 0;
+    color: whitesmoke;
+}
+
+section.especialidades .especialidades-box p {
+    text-align: justify;
+}
+
+/*SOBRE*/
+
+section.sobre {
+    padding: 100px 5%;
+}
+
+section.sobre .flex {
+   gap: 50px;
+   align-items: center;
+}
+
+section.sobre .img-sobre img {
+    border-radius: 0 70px 70px;
+}
+
+section.sobre .txt-sobre h1 {
+    font-size: 45px;
+    line-height: 40px;
+}
+
+section.sobre .txt-sobre p {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+
+.socias-sobre button {
+    width: 50px;
+    height: 40px;
+    background-color: var(--cor-1);
+    border: 0;
+    border-radius: 0 8px 8px 8px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 5px;
+    transition: .3s;
+}
+
+section.sobre .txt-sobre .socias-sobre button:hover {
+    transform: scale(1.10);
+    box-shadow: 1px 1px 3px 1px whitesmoke;
+    background-color: aqua;
+}
+
+/*PORTIFOLIO*/
+
+section.portifolio {
+    padding: 100px 5%;
+    box-shadow: 0px 0px 10px 0px whitesmoke;
+}
+
+section.portifolio .txt-portifolio h1 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 45px;
+    padding-bottom: 80px;
+}
+
+section.portifolio .flex {
+    justify-content: space-around;
+}
+
+section.portifolio .img-portifolio {
+    width: 400px;
+    height: 550px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 15s;
+    cursor: pointer;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 0 0 10px 10px rgba(245, 245, 245, 0.404);
+}
+
+section.portifolio .img-portifolio:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 600;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/*FORMULARIO*/ 
+
+section.formulario {
+    padding: 50px 5%;
+    box-shadow: 0px 0px 10px 0px whitesmoke;
+}
+
+section.formulario h1 {
+    text-align: center;
+    font-size: 45px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: #585858b6;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: var(--cor-1);
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar input {
+    width: 100px;
+    background-color: var(--cor-1);
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+form .btn-enviar input:hover {
+    transform: scale(1.05);
+}
+
+/*FOOTER*/ 
+
+footer {
+    padding: 50px 5%;
+}
+
+footer .flex {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer p i {
+    color: var(--cor-1);
+    font-size: 30px;
+    margin: 5px;
+}
+
+footer p i:hover {
+    color: aqua;
+}
+
+footer p a {
+    list-style-type: none;
+    text-decoration: none;
+    color: whitesmoke;
+}

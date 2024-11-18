@@ -1,0 +1,78 @@
+@media screen and (max-width: 1020px) {
+
+/*ESTILO GERAL*/
+    .flex {
+    display: flex;
+}
+
+/*ESTILO CABEÇALHO*/
+
+header {
+    padding: 60px 3%;
+}
+
+header nav ul li { /* >>>> MENU <<<<*/
+    display: none;
+}
+
+header .btn-contato button {  /* >>>> BUTTON MENU <<<<*/
+    display: none;
+}
+
+/*ESTILO TOPO DO SITE*/
+
+    section.topodo-site {
+    padding: 30px 3%;
+}
+
+    body > main > section > div > div {  /*flex*/
+    flex-direction: column-reverse;
+    gap: 50px;
+}
+
+    .txt-topodo-site h1 {
+    color: whitesmoke;
+    font-size: 35px;
+    line-height: 35px;
+}
+
+    .img-topodo-site img {
+    box-shadow: 0 0 50px 5px var(--cor2);
+    width: 100%;
+}
+
+/*ESPECIALIDADES*/
+
+section.especialidades {
+    padding: 30px 3%;
+}
+
+section.especialidades h2 {
+    padding-bottom: 50px;
+    font-size: 35px;
+}
+
+section.especialidades .especialidades-box {
+    width: 350px;
+    height: 300px;
+    padding: 30px;
+}
+
+section.especialidades .especialidades-box i {
+    font-size: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

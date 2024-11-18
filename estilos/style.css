@@ -35,7 +35,7 @@ body {
 /*ESTILO CABEÇALHO*/
 
 header {
-    padding: 100px 10%;
+    padding: 90px 5%;
 }
 
 header > .interface {
@@ -88,7 +88,7 @@ header nav ul li a:hover {
 /*ESTILO TOPO DO SITE*/
 
 section.topodo-site {
-    padding: 100px 10% ;
+    padding: 100px 5%;
 }
 
 body > main > section > div > div {  /*flex*/

@@ -174,10 +174,10 @@ section.sobre {
 }
 
 section.sobre .flex {
-   gap: 50px;
-   align-items: center;
-}
-
+    gap: 50px;
+    align-items: center;
+ }
+ 
 section.sobre .img-sobre img {
     border-radius: 0 70px 70px;
 }

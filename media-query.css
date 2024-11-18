@@ -62,17 +62,69 @@ section.especialidades .especialidades-box i {
     font-size: 45px;
 }
 
+/*SOBRE*/
 
+section.sobre {
+    padding: 30px 3%;
+}
 
+section.sobre .flex {
+    flex-direction: column;
+ }
 
+section.sobre .img-sobre img {
+    width: 100%;
+}
 
+section.sobre .txt-sobre h1 {
+    font-size: 35px;
+}
 
+/*PORTIFOLIO*/
 
+section.portifolio {
+    padding: 30px 3%;
+    box-shadow: 0px 0px 10px 0px whitesmoke;
+}
 
+section.portifolio .txt-portifolio h1 {
+    font-size: 35px;
+    padding-top: 50px;
+}
 
+section.portifolio .flex {
+    flex-direction: column;
+}
 
+section.portifolio .img-portifolio {
+    width: 300px;
+    height: 500px;
+    transition: 10s;
+    box-shadow: 0 0 10px 5px rgba(245, 245, 245, 0.281);
+}
 
+/*FORMULARIO*/ 
 
+section.formulario h1 {
+    font-size: 35px;
+}
 
+form {
+    max-width: 400px;
+}
 
+form .btn-enviar input {
+    width: 80px;
+}
+
+/*FOOTER*/ 
+
+footer {
+    padding: 70px 3%;
+}
+
+footer .flex {
+    flex-direction: column;
+    gap: 5px;
+}
 }

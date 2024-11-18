@@ -1,130 +1,140 @@
 @media screen and (max-width: 1020px) {
-
-/*ESTILO GERAL*/
+    :root {
+        --cor-1: #00cacade;
+        --cor2: #00ffff;
+    }
+    /*ESTILO GERAL*/
     .flex {
-    display: flex;
-}
+        display: flex;
+    }
 
-/*ESTILO CABEÇALHO*/
+    /*ESTILO CABEÇALHO*/
 
-header {
-    padding: 60px 3%;
-}
+    header {
+        padding: 60px 3%;
+    }
 
-header nav ul li { /* >>>> MENU <<<<*/
-    display: none;
-}
+    header nav ul li {
+        /* >>>> MENU <<<<*/
+        background-color: var(--cor-1);
+        padding: 0 14px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+    }
 
-header .btn-contato button {  /* >>>> BUTTON MENU <<<<*/
-    display: none;
-}
+    header .btn-contato button {
+        /* >>>> BUTTON MENU <<<<*/
 
-/*ESTILO TOPO DO SITE*/
+    }
+
+    /*ESTILO TOPO DO SITE*/
 
     section.topodo-site {
-    padding: 30px 3%;
-}
+        padding: 30px 3%;
+    }
 
-    body > main > section > div > div {  /*flex*/
-    flex-direction: column-reverse;
-    gap: 50px;
-}
+    body>main>section>div>div {
+        /*flex*/
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
 
     .txt-topodo-site h1 {
-    color: whitesmoke;
-    font-size: 35px;
-    line-height: 35px;
-}
+        color: whitesmoke;
+        font-size: 35px;
+        line-height: 35px;
+    }
 
     .img-topodo-site img {
-    box-shadow: 0 0 50px 5px var(--cor2);
-    width: 100%;
-}
+        box-shadow: 0 0 50px 5px var(--cor2);
+        width: 100%;
+    }
 
-/*ESPECIALIDADES*/
+    /*ESPECIALIDADES*/
 
-section.especialidades {
-    padding: 30px 3%;
-}
+    section.especialidades {
+        padding: 30px 3%;
+    }
 
-section.especialidades h2 {
-    padding-bottom: 50px;
-    font-size: 35px;
-}
+    section.especialidades h2 {
+        padding-bottom: 50px;
+        font-size: 35px;
+    }
 
-section.especialidades .especialidades-box {
-    width: 350px;
-    height: 300px;
-    padding: 30px;
-}
+    section.especialidades .especialidades-box {
+        width: 350px;
+        height: 300px;
+        padding: 30px;
+    }
 
-section.especialidades .especialidades-box i {
-    font-size: 45px;
-}
+    section.especialidades .especialidades-box i {
+        font-size: 45px;
+    }
 
-/*SOBRE*/
+    /*SOBRE*/
 
-section.sobre {
-    padding: 30px 3%;
-}
+    section.sobre {
+        padding: 30px 3%;
+    }
 
-section.sobre .flex {
-    flex-direction: column;
- }
+    section.sobre .flex {
+        flex-direction: column;
+    }
 
-section.sobre .img-sobre img {
-    width: 100%;
-}
+    section.sobre .img-sobre img {
+        width: 100%;
+    }
 
-section.sobre .txt-sobre h1 {
-    font-size: 35px;
-}
+    section.sobre .txt-sobre h1 {
+        font-size: 35px;
+    }
 
-/*PORTIFOLIO*/
+    /*PORTIFOLIO*/
 
-section.portifolio {
-    padding: 30px 3%;
-    box-shadow: 0px 0px 10px 0px whitesmoke;
-}
+    section.portifolio {
+        padding: 30px 3%;
+        box-shadow: 0px 0px 10px 0px whitesmoke;
+    }
 
-section.portifolio .txt-portifolio h1 {
-    font-size: 35px;
-    padding-top: 50px;
-}
+    section.portifolio .txt-portifolio h1 {
+        font-size: 35px;
+        padding-top: 50px;
+    }
 
-section.portifolio .flex {
-    flex-direction: column;
-}
+    section.portifolio .flex {
+        flex-direction: column;
+    }
 
-section.portifolio .img-portifolio {
-    width: 300px;
-    height: 500px;
-    transition: 10s;
-    box-shadow: 0 0 10px 5px rgba(245, 245, 245, 0.281);
-}
+    section.portifolio .img-portifolio {
+        width: 300px;
+        height: 500px;
+        transition: 10s;
+        box-shadow: 0 0 10px 5px rgba(245, 245, 245, 0.281);
+    }
 
-/*FORMULARIO*/ 
+    /*FORMULARIO*/
 
-section.formulario h1 {
-    font-size: 35px;
-}
+    section.formulario h1 {
+        font-size: 35px;
+    }
 
-form {
-    max-width: 400px;
-}
+    form {
+        max-width: 400px;
+    }
 
-form .btn-enviar input {
-    width: 80px;
-}
+    form .btn-enviar input {
+        width: 80px;
+    }
 
-/*FOOTER*/ 
+    /*FOOTER*/
 
-footer {
-    padding: 70px 3%;
-}
+    footer {
+        padding: 70px 3%;
+    }
 
-footer .flex {
-    flex-direction: column;
-    gap: 5px;
-}
+    footer .flex {
+        flex-direction: column;
+        gap: 5px;
+    }
 }

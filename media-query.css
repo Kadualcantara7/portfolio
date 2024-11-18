@@ -58,8 +58,13 @@
     }
 
     section.especialidades h2 {
-        padding-bottom: 50px;
+        padding-bottom: 60px;
+        padding-top: 60px;
         font-size: 35px;
+    }
+
+    section.especialidades .flex {
+        gap: 50px;
     }
 
     section.especialidades .especialidades-box {
@@ -69,7 +74,7 @@
     }
 
     section.especialidades .especialidades-box i {
-        font-size: 45px;
+        font-size: 55px;
     }
 
     /*SOBRE*/
@@ -88,6 +93,12 @@
 
     section.sobre .txt-sobre h1 {
         font-size: 35px;
+        text-align: center;
+    }
+
+    .socias-sobre button {
+        display: ;
+
     }
 
     /*PORTIFOLIO*/

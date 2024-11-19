@@ -63,6 +63,10 @@
         font-size: 35px;
     }
 
+    section.especialidades .especialidades-box a{
+        overflow: hidden;
+    }
+
     section.especialidades .flex {
         gap: 50px;
     }
@@ -96,11 +100,6 @@
     section.sobre .txt-sobre h1 {
         font-size: 35px;
         text-align: center;
-    }
-
-    .socias-sobre button {
-        display: ;
-
     }
 
     /*PORTIFOLIO*/
